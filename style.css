@@ -1,0 +1,139 @@
+/* Global Reset */
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Horizontal Rule Styling */
+hr {
+  border: 0;
+  height: 1px;
+  background: #fff;
+  margin: 20px 0;
+}
+
+/* Footer Styling */
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550;
+  position: fixed;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Font Styles */
+.lora-txt1 {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 650;
+  font-style: normal;
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-txt {
+  font-family: "Libre Baskerville", serif;
+  font-size: 3em;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-style: normal;
+}
+
+/* Text Smoothing */
+body,
+.language-link {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Language Link Colors */
+#pt {
+  color: #ffcc00;
+}
+
+#en {
+  color: #00ccff;
+}
+
+/* Language Link Styling */
+.language-link {
+  display: inline-block;
+  font-size: 2.5em;
+  text-decoration: none;
+  margin: 20px 0;
+  padding: 10px 100px;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: pulse 2s infinite;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Hover Effects */
+.language-link:hover {
+  background-color: white;
+  color: #333;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+/* Body Background and Layout */
+.bodyL {
+  background: linear-gradient(135deg, #1e1e1e 40%, #282c34 100%);
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  .language-link {
+    font-size: 2em;
+    padding: 10px 20px;
+  }
+
+  .libre-baskerville-txt {
+    font-size: 2.5em;
+  }
+
+  .bodyL {
+    padding: 20px;
+  }
+}
