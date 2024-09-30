@@ -9,19 +9,84 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Pedro Toscano - Portfólio</title>
   </head>
   <body>
-    <header class="d-flex justify-content-center py-3 bg-dark">
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a href="#" class="nav-link active" aria-current="page">Início</a>
-        </li>
-        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-      </ul>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="./imgs/pedro_pic.png"
+            alt="Pedro Toscano"
+            class="rounded-circle"
+            width="50"
+            height="50"
+          />
+          <span class="ms-2">Pedro Toscano</span>
+        </a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Currículo</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Sobre Mim</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contato</a>
+          </li>
+        </ul>
+      </div>
     </header>
+
+    <div
+      class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
+    >
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">
+          Olá, Eu sou Pedro Toscano, Desenvolvedor
+        </h1>
+        <p class="lead">
+          Seja bem-vindo ao meu portfólio! Eu sou Analista e Desenvolvedor no
+          mundo digital, entusiasta da Web3. Comecei jogando videogames e,
+          sem perceber, me apaixonei por tecnologia. Agora me tornei um mago dos
+          códigos! 🧙‍♂️
+        </p>
+
+        <div
+          class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
+        >
+          <button
+            type="button"
+            class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
+          >
+            Meus projetos
+          </button>
+          <button type="button" class="btn btn-outline-primary btn-lg px-4">
+            Contato
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <img
+          class="rounded-lg-3"
+          src="./imgs/pedrohero_pic.jpeg"
+          alt=""
+          width="450"
+        />
+      </div>
+    </div>
+
+    <section class="skills" style="text-align: center; padding: 50px">
+      <h1>Minhas habilidades</h1>
+      <p>Analista e Desenvolvedor no Mundo digital, entusiasta da Web3.</p>
+      <a href="#projects" class="btn btn-primary">Confira meus projetos</a>
+    </section>
   </body>
 </html>
