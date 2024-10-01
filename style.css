@@ -28,12 +28,21 @@ footer {
   color: rgba(255, 255, 255, 0.8);
 }
 
+img {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+section {
+  margin-top: 10px;
+}
+
 .lead {
   margin-top: 40px;
 }
 
-img {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+.skills {
+  padding: 50px;
+  text-align: center;
 }
 
 .btn-primary {
@@ -53,10 +62,6 @@ img {
 .btn-outline-primary:hover {
   background-color: #6a1b9a;
   color: white;
-}
-
-section {
-  margin-top: 50px;
 }
 
 /* Font Styles */
@@ -159,7 +164,7 @@ body,
 
 @media (max-width: 995px) {
   .navbar-nav {
-    display: none; /* Esconde o menu em telas pequenas */
+    display: none;
   }
 }
 
@@ -177,4 +182,21 @@ body,
   .bodyL {
     padding: 20px;
   }
+}
+
+.cardswid {
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardswid:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Cores dos ícones */
+.icon {
+  color: #6f42c1;
+  font-size: 3rem;
 }
