@@ -13,7 +13,7 @@
     <title>Pedro Toscano - Portfólio</title>
   </head>
   <body>
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header id="inicio" class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#">
           <img
@@ -27,19 +27,19 @@
         </a>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link active">Início</a>
+            <a href="#inicio" class="nav-link active">Início</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Currículo</a>
+            <a href="curriculo.html" class="nav-link">Currículo</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Projetos</a>
+            <a href="#projetos" class="nav-link">Projetos</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Sobre Mim</a>
+            <a href="#sobremim" class="nav-link">Sobre Mim</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contato</a>
+            <a href="#contato" class="nav-link">Contato</a>
           </li>
         </ul>
       </div>
@@ -54,8 +54,8 @@
         </h1>
         <p class="lead">
           Seja bem-vindo ao meu portfólio! Eu sou Analista e Desenvolvedor no
-          mundo digital, entusiasta da Web3. Comecei jogando videogames e,
-          sem perceber, me apaixonei por tecnologia. Agora me tornei um mago dos
+          mundo digital, entusiasta da Web3. Comecei jogando videogames e, sem
+          perceber, me apaixonei por tecnologia. Agora me tornei um mago dos
           códigos! 🧙‍♂️
         </p>
 
@@ -82,11 +82,146 @@
         />
       </div>
     </div>
+    <section class="skills">
+      <h2 class="text-center mb-5"><strong>O Que Eu Entrego</strong></h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card text-center p-3 cardswid">
+            <div class="icon mb-3" style="font-size: 3rem">🚀</div>
+            <h4>Soluções Escaláveis</h4>
+            <p>
+              Desenvolvo soluções que crescem junto com o seu negócio, de
+              pequenas aplicações a infraestruturas robustas.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card text-center p-3 cardswid">
+            <div class="icon mb-3" style="font-size: 3rem">💻</div>
+            <h4>Tecnologia de Ponta</h4>
+            <p>
+              Integro as mais recentes tecnologias como Node.js, TypeScript e
+              Web3 para criar experiências inovadoras.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card text-center p-3 cardswid">
+            <div class="icon mb-3" style="font-size: 3rem">⚡</div>
+            <h4>Otimização de Desempenho</h4>
+            <p>
+              Foco em otimização para garantir tempos de carregamento rápidos e
+              uma experiência fluida sem travamentos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section class="skills" style="text-align: center; padding: 50px">
-      <h1>Minhas habilidades</h1>
-      <p>Analista e Desenvolvedor no Mundo digital, entusiasta da Web3.</p>
-      <a href="#projects" class="btn btn-primary">Confira meus projetos</a>
+    <section id="projetos">
+      <div class="container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto text-center">
+            <h2 class="text-center mb-5"><strong>Meus Projetos</strong></h2>
+            <p class="lead text-body-secondary">
+              Aqui estão alguns dos meus projetos já realizados, todos estão em
+              meus repositórios do GitHub, caso queria explorar mais, apenas
+              clique no botão abaixo para saber mais!
+            </p>
+            <p>
+              <a href="https://github.com/pedro12u" class="btn btn-primary my-2"
+                >Acesse meu GitHub</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <!-- Projeto 1 -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="project1-thumbnail.jpg"
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <p class="card-text">Pokedex usando PokeAPI</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a
+                      href="https://github.com/pedro12u/PokedexPokeAPI"
+                      class="btn btn-sm btn-outline-secondary"
+                      target="_blank"
+                    >
+                      Acessar
+                    </a>
+                  </div>
+                  <small class="text-body-secondary">11/09/2024</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 2 -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./imgs/oceanlive.png"
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                alt="Project 2"
+              />
+              <div class="card-body">
+                <p class="card-text">OceanLive - Projeto Estudantil</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a
+                      href="https://pedro12u.github.io/OceanLiveAEP/"
+                      class="btn btn-sm btn-outline-secondary"
+                      target="_blank"
+                    >
+                      Acessar
+                    </a>
+                  </div>
+                  <small class="text-body-secondary">17/06/2024</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 3 -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./imgs/tindog.png"
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                alt="Project 3"
+              />
+              <div class="card-body">
+                <p class="card-text">Tinder para cachorros</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a
+                      href="https://pedro12u.github.io/TinDog/"
+                      class="btn btn-sm btn-outline-secondary"
+                      target="_blank"
+                    >
+                      Acessar
+                    </a>
+                  </div>
+                  <small class="text-body-secondary">12/08/2024</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
