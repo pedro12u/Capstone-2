@@ -34,6 +34,7 @@ img {
 
 section {
   margin-top: 10px;
+  padding: 50px 0;
 }
 
 .lead {
@@ -41,7 +42,7 @@ section {
 }
 
 .skills {
-  padding: 50px;
+  padding: 50px 0 20px 0;
   text-align: center;
 }
 
@@ -62,6 +63,11 @@ section {
 .btn-outline-primary:hover {
   background-color: #6a1b9a;
   color: white;
+}
+
+.btn-primary,
+.btn-outline-primary {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Font Styles */
@@ -185,18 +191,53 @@ body,
 }
 
 .cardswid {
-  border-radius: 15px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .cardswid:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.08);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 
 /* Cores dos ícones */
 .icon {
   color: #6f42c1;
-  font-size: 3rem;
+  font-size: 3.5rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-github {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-secondary {
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: white;
 }
