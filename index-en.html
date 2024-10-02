@@ -3,11 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pedro Toscano's portfolio, Web3 enthusiast developer. Explore my projects and get in touch."
+    />
+    <meta property="og:title" content="Pedro Toscano - Portfolio" />
+    <meta
+      property="og:description"
+      content="Explore the professional portfolio of Pedro Toscano, including skills, projects, and contact information."
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
     <title>Pedro Toscano - Portfolio</title>
@@ -15,62 +28,64 @@
   <body>
     <header id="inicio" class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <nav class="navbar-brand d-flex align-items-center">
           <img
             src="./imgs/pedro_pic.png"
-            alt="Pedro Toscano"
+            alt="Foto de Pedro Toscano"
             class="rounded-circle"
             width="50"
             height="50"
           />
           <span class="ms-2">Pedro Toscano</span>
-        </a>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="#inicio" class="nav-link active">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="resume.html" class="nav-link">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a href="#projetos" class="nav-link">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="#sobremim" class="nav-link">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contato" class="nav-link">Contact</a>
-          </li>
-        </ul>
+        </nav>
+        <nav>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#inicio" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="resume.html" class="nav-link">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projetos" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#sobremim" class="nav-link">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contato" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
-
     <div
       class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
     >
       <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
         <h1 class="display-4 fw-bold lh-1 text-body-emphasis">
-          Hello, I'm Pedro Toscano, Developer
+          Hi, I'm Pedro Toscano, Developer
         </h1>
         <p class="lead">
-          Welcome to my portfolio! I'm an Analyst and Developer in the digital
-          World, and a Web3 enthusiast. I started playing videogames and,
-          without realizing it, I fell in love with technology. Now i've become
-          a coding wizard! 🧙‍♂️
+          Welcome to my portfolio! I am an Analyst and Developer in the digital
+          world, a Web3 enthusiast. I started by playing video games and, before
+          realizing it, I fell in love with technology. Now, I’ve become a code
+          wizard! 🧙‍♂️
         </p>
 
         <div
           class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
         >
-          <button
-            type="button"
+          <a
+            href="#projetos"
             class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
           >
             My Projects
-          </button>
-          <button type="button" class="btn btn-outline-primary btn-lg px-4">
+          </a>
+
+          <a href="#contato" class="btn btn-outline-primary btn-lg px-4">
             Contact
-          </button>
+          </a>
         </div>
       </div>
       <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
@@ -82,15 +97,15 @@
         />
       </div>
     </div>
-    <section class="skills">
-      <h2 class="text-center mb-5"><strong>What I deliver</strong></h2>
+    <section class="skills container">
+      <h2 class="text-center mb-5"><strong>What I Deliver</strong></h2>
       <div class="row justify-content-center">
         <div class="col-md-4 mb-4">
           <div class="card text-center p-3 cardswid">
             <div class="icon mb-3" style="font-size: 3rem">🚀</div>
             <h4>Scalable Solutions</h4>
             <p>
-              I develop solutions that grow with your business, from small
+              I develop solutions that grow along with your business, from small
               applications to robust infrastructures.
             </p>
           </div>
@@ -98,7 +113,7 @@
         <div class="col-md-4 mb-4">
           <div class="card text-center p-3 cardswid">
             <div class="icon mb-3" style="font-size: 3rem">💻</div>
-            <h4>Cutting-edge Technology</h4>
+            <h4>Cutting-Edge Technology</h4>
             <p>
               I integrate the latest technologies like Node.js, TypeScript, and
               Web3 to create innovative experiences.
@@ -110,12 +125,304 @@
             <div class="icon mb-3" style="font-size: 3rem">⚡</div>
             <h4>Performance Optimization</h4>
             <p>
-              I focus on optimization to ensure fast loading times and a smooth,
+              I focus on optimization to ensure fast load times and a smooth,
               lag-free experience.
             </p>
           </div>
         </div>
       </div>
     </section>
+    <section id="projetos">
+      <div class="container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto text-center">
+            <h2 class="text-center mb-5"><strong>My Projects</strong></h2>
+            <p class="lead text-body-secondary">
+              Here are some of my completed projects, all of which are available
+              in my GitHub repositories. If you want to explore more, just click
+              the button below to find out!
+            </p>
+            <p>
+              <a href="https://github.com/pedro12u" class="btn btn-primary my-2"
+                >Visit my GitHub</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./imgs/pokeapi.png"
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                alt="Pokedex usando pokeapi"
+              />
+              <div class="card-body">
+                <p class="card-text">Pokedex using PokeAPI</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a
+                      href="https://github.com/pedro12u/PokedexPokeAPI"
+                      class="btn btn-sm btn-outline-secondary"
+                      target="_blank"
+                    >
+                      Access
+                    </a>
+                  </div>
+                  <small class="text-body-secondary">11/09/2024</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./imgs/oceanlive.png"
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                alt="Oceanlive, um projeto estudantil conscientizador"
+              />
+              <div class="card-body">
+                <p class="card-text">OceanLive - Student Project</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a
+                      href="https://pedro12u.github.io/OceanLiveAEP/"
+                      class="btn btn-sm btn-outline-secondary"
+                      target="_blank"
+                    >
+                      Access
+                    </a>
+                  </div>
+                  <small class="text-body-secondary">17/06/2024</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./imgs/tindog.png"
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                alt="Um site de tinder para cachorros"
+              />
+              <div class="card-body">
+                <p class="card-text">Tinder for dogs</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a
+                      href="https://pedro12u.github.io/TinDog/"
+                      class="btn btn-sm btn-outline-secondary"
+                      target="_blank"
+                    >
+                      Access
+                    </a>
+                  </div>
+                  <small class="text-body-secondary">12/08/2024</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sobremim">
+      <hr class="featurette-divider" />
+      <div class="container">
+        <!-- Parágrafo 1 -->
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">
+              Who am I?
+              <span class="text-body-secondary"
+                ><br />A little about Pedro Toscano.</span
+              >
+            </h2>
+            <p class="lead">
+              Since I was young, I've always had a strong connection with
+              technology. Video games and computers always fascinated me, and it
+              was this curiosity that led me to the world of exact sciences. For
+              a long time, I searched for what truly inspired me, until I
+              realized that computers were always in front of me as the natural
+              choice.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img
+              src="./imgs/about1.jpeg"
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="350"
+              height="350"
+              alt="Picture of Pedro as a child"
+            />
+          </div>
+        </div>
+        <hr class="featurette-divider" />
+        <div class="row featurette">
+          <div class="col-md-7">
+            <p class="lead">
+              I haven't officially entered the job market yet, but I've had the
+              opportunity to work on some projects I'm very proud of. One of
+              them was an educational math game developed with college friends.
+              This project showed me how much I was advancing in my development
+              skills and provided a collaborative experience.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img
+              src="./imgs/about2.jpeg"
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="350"
+              height="350"
+              alt="Picture of Pedro presenting the project"
+            />
+          </div>
+        </div>
+        <hr class="featurette-divider" />
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <p class="lead">
+              I am extremely focused on solving problems and believe that
+              without a challenge, there is no true purpose in work. My greatest
+              motivation is my family and the desire to positively impact the
+              world. I believe my role is to transform the world into a better
+              place through my contributions.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img
+              src="./imgs/about3.jpeg"
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="350"
+              height="350"
+              alt="Current picture of Pedro in Chile"
+            />
+          </div>
+        </div>
+      </div>
+      <hr class="featurette-divider" />
+    </section>
+    <hr class="featurette-divider" />
+    <section id="contato">
+      <div class="container">
+        <h2 class="pb-2 border-bottom">Since you're interested...</h2>
+
+        <div
+          class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5"
+        >
+          <div class="col d-flex flex-column align-items-start gap-2">
+            <h2 class="fw-bold text-body-emphasis">
+              To get in touch with me...
+            </h2>
+            <p class="text-body-secondary">
+              I provide contact information to make it easier for you to reach
+              out.
+            </p>
+          </div>
+
+          <div class="col">
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+              <div class="col d-flex flex-column gap-2">
+                <a
+                  href="https://www.linkedin.com/in/pedro-toscano-674454218/"
+                  target="_blank"
+                >
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary fs-4 rounded-3"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </div>
+                </a>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">LinkedIn</h4>
+                <p class="text-body-secondary">
+                  Access my LinkedIn if you want to get in touch or connect.
+                </p>
+              </div>
+
+              <div class="col d-flex flex-column gap-2">
+                <a href="mailto:toscanopedroall@gmail.com">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary fs-4 rounded-3"
+                  >
+                    <i class="bi bi-envelope"></i>
+                  </div>
+                </a>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">E-mail</h4>
+                <p class="text-body-secondary">
+                  My email is one of the main communication channels I use.
+                </p>
+              </div>
+
+              <div class="col d-flex flex-column gap-2">
+                <a
+                  href="https://www.instagram.com/pedrotoscanoo"
+                  target="_blank"
+                >
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text--primary fs-4 rounded-3"
+                  >
+                    <i class="bi bi-instagram"></i>
+                  </div>
+                </a>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">Instagram</h4>
+              </div>
+
+              <div class="col d-flex flex-column gap-2">
+                <a href="https://github.com/pedro12u" target="_blank">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary fs-4 rounded-3"
+                  >
+                    <i class="bi bi-github"></i>
+                  </div>
+                </a>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">GitHub</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--     SEÇÃO DE CONTATO A SER REALIZADA -->
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >© 2024 Pedro Toscano, Inc</span
+          >
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-body-secondary" href="https://x.com/pedrotoscanoo">
+              <i class="bi bi-twitter"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a
+              class="text-body-secondary"
+              href="https://www.instagram.com/pedrotoscanoo/"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a
+              class="text-body-secondary"
+              href="https://www.linkedin.com/in/pedro-toscano-674454218/"
+            >
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>

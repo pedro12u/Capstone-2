@@ -6,14 +6,7 @@
   box-sizing: border-box;
 }
 
-/* Horizontal Rule Styling */
-hr {
-  border: 0;
-  height: 1px;
-  background: #fff;
-  margin: 20px 0;
-}
-
+/* Body Layout */
 html,
 body {
   height: 100%;
@@ -22,21 +15,18 @@ body {
   flex-direction: column;
 }
 
-footer {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 550;
-  width: 100%;
+.bodyL {
+  background: linear-gradient(135deg, #1e1e1e 40%, #282c34 100%);
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 15px 0;
-  background-color: #f8f9fa;
-  color: rgba(0, 0, 0, 0.8);
-  margin-top: auto;
+  padding-bottom: 50px;
 }
 
-img {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
+/* Section and Content */
 section {
   margin-top: 10px;
   padding: 50px 0;
@@ -51,6 +41,32 @@ section {
   text-align: center;
 }
 
+/* Footer */
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #f8f9fa;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: auto;
+}
+
+/* Horizontal Rule */
+hr {
+  border: 0;
+  height: 1px;
+  background: #fff;
+  margin: 20px 0;
+}
+
+/* Image */
+img {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Buttons */
 .btn-primary {
   background-color: #6a1b9a;
   border-color: #6a1b9a;
@@ -75,24 +91,37 @@ section {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Font Styles */
+.btn-github {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.btn-outline-secondary {
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* Typography */
 .lora-txt1 {
   font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-weight: 650;
-  font-style: normal;
 }
 
 .space-mono-regular {
   font-family: "Space Mono", monospace;
   font-weight: 400;
-  font-style: normal;
 }
 
 .libre-baskerville-regular {
   font-family: "Libre Baskerville", serif;
   font-weight: 700;
-  font-style: normal;
 }
 
 .libre-baskerville-txt {
@@ -103,26 +132,13 @@ section {
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
   line-height: 1.5;
   margin-bottom: 20px;
-  font-style: normal;
 }
 
-/* Text Smoothing */
-body,
-.language-link {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.text-body-secondary:hover {
+  color: #6a1b9a;
 }
 
-/* Language Link Colors */
-#pt {
-  color: #ffcc00;
-}
-
-#en {
-  color: #00ccff;
-}
-
-/* Language Link Styling */
+/* Language Link */
 .language-link {
   display: inline-block;
   font-size: 2.5em;
@@ -133,6 +149,14 @@ body,
   transition: background-color 0.3s ease, color 0.3s ease;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   animation: pulse 2s infinite;
+}
+
+.language-link:hover {
+  background-color: white;
+  color: #333;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
 }
 
 /* Pulse Animation */
@@ -148,27 +172,7 @@ body,
   }
 }
 
-/* Hover Effects */
-.language-link:hover {
-  background-color: white;
-  color: #333;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-2px);
-  transition: transform 0.2s ease;
-}
-
-/* Body Background and Layout */
-.bodyL {
-  background: linear-gradient(135deg, #1e1e1e 40%, #282c34 100%);
-  color: #ffffff;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 50px;
-}
-
+/* Navbar */
 .navbar-nav {
   display: flex;
 }
@@ -177,6 +181,41 @@ body,
   .navbar-nav {
     display: none;
   }
+}
+
+/* Cards */
+.cardswid {
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.cardswid:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Feature Icon */
+.feature-icon-small i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.feature-icon-small {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d6efd;
+  border-radius: 50%;
+  color: white;
+}
+
+/* Icon Styles */
+.icon {
+  color: #6f42c1;
+  font-size: 3.5rem;
 }
 
 /* Responsiveness */
@@ -195,23 +234,7 @@ body,
   }
 }
 
-.cardswid {
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.cardswid:hover {
-  transform: scale(1.08);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-}
-
-/* Cores dos ícones */
-.icon {
-  color: #6f42c1;
-  font-size: 3.5rem;
-}
-
+/* Section Titles */
 .section-title {
   text-align: center;
   margin-bottom: 30px;
@@ -222,12 +245,7 @@ body,
   margin-bottom: 20px;
 }
 
-.btn-github {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 20px;
-}
-
+/* Card Hover Effect */
 .card {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -235,18 +253,4 @@ body,
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-.btn-outline-secondary {
-  border-color: #6c757d;
-  color: #6c757d;
-}
-
-.btn-outline-secondary:hover {
-  background-color: #6c757d;
-  color: white;
-}
-
-.text-body-secondary:hover {
-  color: #6a1b9a;
 }
