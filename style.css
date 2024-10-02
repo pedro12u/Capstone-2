@@ -16,7 +16,7 @@ body {
 }
 
 .bodyL {
-  background: linear-gradient(135deg, #1e1e1e 40%, #282c34 100%);
+  background: linear-gradient(135deg, #1a1a2e 40%, #1e1e3f 100%);
   color: #ffffff;
   height: 100vh;
   display: flex;
@@ -41,7 +41,7 @@ section {
   text-align: center;
 }
 
-/* Footer */
+/* Footer (mantendo como solicitado) */
 footer {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 550;
@@ -68,27 +68,30 @@ img {
 
 /* Buttons */
 .btn-primary {
-  background-color: #6a1b9a;
-  border-color: #6a1b9a;
+  background-color: #7b1fa2;
+  border-color: #7b1fa2;
+  box-shadow: 0 0 10px rgba(123, 31, 162, 0.5);
 }
 
 .btn-primary:hover {
-  background-color: #7b1fa2;
+  background-color: #9c27b0;
+  box-shadow: 0 0 20px rgba(156, 39, 176, 0.7);
 }
 
 .btn-outline-primary {
-  color: #6a1b9a;
-  border-color: #6a1b9a;
+  color: #7b1fa2;
+  border-color: #7b1fa2;
 }
 
 .btn-outline-primary:hover {
-  background-color: #6a1b9a;
+  background-color: #7b1fa2;
   color: white;
+  box-shadow: 0 0 15px rgba(123, 31, 162, 0.5);
 }
 
 .btn-primary,
 .btn-outline-primary {
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-github {
@@ -128,14 +131,14 @@ img {
   font-family: "Libre Baskerville", serif;
   font-size: 3em;
   font-weight: 700;
-  color: #ffffff;
+  color: #e0e0e0;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
 .text-body-secondary:hover {
-  color: #6a1b9a;
+  color: #7b1fa2;
 }
 
 /* Language Link */
@@ -146,15 +149,17 @@ img {
   margin: 20px 0;
   padding: 10px 100px;
   color: white;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   animation: pulse 2s infinite;
+  border: 2px solid rgba(123, 31, 162, 0.5);
+  box-shadow: 0 0 15px rgba(123, 31, 162, 0.4);
 }
 
 .language-link:hover {
-  background-color: white;
-  color: #333;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  background-color: #7b1fa2;
+  color: #ffffff;
+  box-shadow: 0px 4px 20px rgba(123, 31, 162, 0.6);
   transform: translateY(-2px);
   transition: transform 0.2s ease;
 }
@@ -172,17 +177,6 @@ img {
   }
 }
 
-/* Navbar */
-.navbar-nav {
-  display: flex;
-}
-
-@media (max-width: 995px) {
-  .navbar-nav {
-    display: none;
-  }
-}
-
 /* Cards */
 .cardswid {
   border-radius: 20px;
@@ -192,30 +186,7 @@ img {
 
 .cardswid:hover {
   transform: scale(1.08);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-}
-
-/* Feature Icon */
-.feature-icon-small i {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.feature-icon-small {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #0d6efd;
-  border-radius: 50%;
-  color: white;
-}
-
-/* Icon Styles */
-.icon {
-  color: #6f42c1;
-  font-size: 3.5rem;
+  box-shadow: 0 15px 25px rgba(123, 31, 162, 0.2); /* Adicionando cor de sombra roxa */
 }
 
 /* Responsiveness */
@@ -238,11 +209,13 @@ img {
 .section-title {
   text-align: center;
   margin-bottom: 30px;
+  color: #9c27b0;
 }
 
 .section-text {
   text-align: center;
   margin-bottom: 20px;
+  color: #b39ddb;
 }
 
 /* Card Hover Effect */
@@ -252,5 +225,5 @@ img {
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(123, 31, 162, 0.3);
 }
