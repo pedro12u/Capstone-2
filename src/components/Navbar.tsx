@@ -1,150 +1,233 @@
-import { useState } from 'react'
-import { motion, useMotionValue, useTransform } from 'framer-motion'
-import { Download, Menu, X } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+import { Download, Globe2, Menu, X } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import { fadeInUp } from '../styles/motion'
+import { CvDownloadModal } from './CvDownloadModal'
 
-type NavbarProps = {
-  resumeUrl: string
-}
-
-const links = [
-  { href: '#home', label: 'Início' },
-  { href: '#projects', label: 'Projetos' },
-  { href: '#about', label: 'Sobre' },
-  { href: '#contact', label: 'Contato' },
-]
-
-export function Navbar({ resumeUrl }: NavbarProps) {
+export function Navbar() {
   const [open, setOpen] = useState(false)
+  const [exploreOpen, setExploreOpen] = useState(false)
+  const [showCvModal, setShowCvModal] = useState(false)
+  const { t, i18n } = useTranslation()
+  const [langOpen, setLangOpen] = useState(false)
+  const links = t('navbar.links', { returnObjects: true }) as Array<{ href: string; label: string }>
+  const currentLang = i18n.language?.startsWith('en') ? 'en' : 'pt'
 
-  // Tilt no logo
-  const x = useMotionValue(0)
-  const y = useMotionValue(0)
-  const rotateX = useTransform(y, [-20, 20], [6, -6])
-  const rotateY = useTransform(x, [-20, 20], [-6, 6])
+useEffect(() => {
+  const close = (e: MouseEvent) => {
+    const target = e.target as HTMLElement
+    if (!target.closest('.lang-dropdown')) setLangOpen(false)
+  }
+  document.addEventListener('click', close)
+  return () => document.removeEventListener('click', close)
+}, [])
+
+
+  const grouped = {
+    main: links.slice(0, 3),
+    explore: links.slice(3, 6),
+    other: links.slice(6),
+  }
+
+  const changeLanguage = (lng: 'pt' | 'en') => {
+    i18n.changeLanguage(lng)
+    setOpen(false)
+  }
 
   return (
-    <header className="sticky top-0 z-[999] w-full backdrop-blur-2xl">
-      {/* Aura luminosa atrás */}
-      <div className="absolute left-1/2 top-0 -translate-x-1/2 h-40 w-[70%] bg-accent/20 blur-[120px] opacity-40 pointer-events-none" />
-
-      {/* Pulse line inferior */}
-      <motion.div
-        className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-gradient-to-r from-transparent via-accentLight/50 to-transparent opacity-60"
-        animate={{ x: ['-100%', '100%'] }}
-        transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
-      />
-
-      <div className="mx-auto max-w-7xl px-4 pt-4 pb-2 relative z-10">
-        <motion.div
-          className="relative flex items-center justify-between rounded-2xl border border-white/10 
-                     bg-white/5 backdrop-blur-xl p-4 shadow-[0_0_35px_rgba(0,0,0,0.45)]
-                     hover:shadow-[0_0_55px_rgba(90,200,255,0.35)] transition-all"
-        >
-          {/* LEFT - LOGO */}
+    <>
+      {/* NAVBAR */}
+      <header className="sticky top-0 z-[999] w-full backdrop-blur-xl bg-[rgba(0,0,0,0.25)]">
+        <div className="mx-auto max-w-7xl px-4 pt-4 pb-2 relative z-10">
           <motion.div
-            className="flex items-center gap-3 md:gap-4 cursor-default"
-            style={{ rotateX, rotateY }}
-            onMouseMove={(e) => {
-              const rect = e.currentTarget.getBoundingClientRect()
-              x.set(e.clientX - rect.left - rect.width / 2)
-              y.set(e.clientY - rect.top - rect.height / 2)
-            }}
+            className="relative flex items-center justify-between rounded-2xl border border-white/10 
+                       bg-white/5 backdrop-blur-xl p-3 md:p-4 shadow-[0_0_25px_rgba(0,0,0,0.45)]"
           >
-            {/* Ícone PT (ou ícone futuro de profile) */}
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 
-                            bg-gradient-to-br from-white/10 via-white/5 to-white/0 shadow-inner shadow-black/40 
-                            text-lg font-semibold text-white">
-              PT
+            {/* LEFT — logo */}
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10
+                              bg-gradient-to-br from-white/10 to-white/5 text-white font-semibold shadow-inner">
+                PT
+              </div>
+
+              <div className="hidden md:block">
+                <p className="text-sm text-gray-400">{t('common.name')}</p>
+                <p className="text-base font-semibold text-white leading-tight">{t('common.role')}</p>
+              </div>
             </div>
 
-            <div>
-              <p className="text-sm text-gray-400">Pedro Toscano</p>
-              <p className="text-lg font-semibold text-white tracking-tight">
-                Fullstack & Web3 Engineer
-              </p>
-            </div>
-          </motion.div>
+            {/* DESKTOP MENU */}
+            <nav className="hidden md:flex items-center gap-5">
+              {grouped.main.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="relative text-sm text-gray-300 hover:text-white 
+                             transition before:absolute before:left-1/2 before:-bottom-1 before:h-[2px] 
+                             before:w-0 before:-translate-x-1/2 before:bg-accent2 before:transition-all
+                             hover:before:w-3/4"
+                >
+                  {item.label}
+                </a>
+              ))}
 
-          {/* DESKTOP NAV */}
-          <nav className="hidden md:flex items-center gap-2">
-            {links.map((item, index) => (
-              <motion.a
-                key={item.href}
-                href={item.href}
-                className="relative rounded-full px-4 py-2 text-sm font-medium text-gray-300 transition
-                           hover:text-white hover:tracking-wide"
-                variants={{
-                  hidden: { opacity: 0, y: 10 },
-                  visible: { opacity: 1, y: 0, transition: { delay: 0.1 * index } },
-                }}
-                initial="hidden"
-                animate="visible"
+              {/* EXPLORE DROPDOWN */}
+              <div className="relative">
+                <button
+                  onClick={() => setExploreOpen(!exploreOpen)}
+                  className="flex items-center gap-1 text-sm text-gray-300 hover:text-white transition"
+                >
+                  {t('navbar.explore')}
+                </button>
+
+                {exploreOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -4 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="absolute right-0 mt-2 w-44 rounded-xl bg-black/80 backdrop-blur-xl
+                               border border-white/10 shadow-xl p-2"
+                  >
+                    {grouped.explore.map((item) => (
+                      <a
+                        key={item.href}
+                        href={item.href}
+                        className="block px-3 py-2 rounded-lg text-sm text-gray-200 hover:bg-white/10"
+                      >
+                        {item.label}
+                      </a>
+                    ))}
+                  </motion.div>
+                )}
+              </div>
+
+              {/* other */}
+              {grouped.other.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="text-sm text-gray-300 hover:text-white transition"
+                >
+                  {item.label}
+                </a>
+              ))}
+
+              {/* LANGUAGE SELECTOR — novo estilo */}
+{/* LANGUAGE DROPDOWN — versão premium */}
+<div className="relative lang-dropdown">
+  <button
+    onClick={() => setLangOpen(!langOpen)}
+    className="flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-semibold 
+               uppercase text-gray-300 hover:text-white transition bg-black/30 
+               border border-white/10 backdrop-blur-xl shadow-inner"
+  >
+    <Globe2 size={16} className="text-accent2" />
+    {currentLang.toUpperCase()}
+  </button>
+
+  {langOpen && (
+    <motion.div
+      initial={{ opacity: 0, y: -6 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -6 }}
+      transition={{ duration: 0.15 }}
+      className="absolute right-0 mt-2 w-28 rounded-xl bg-black/80 backdrop-blur-xl 
+                 border border-white/10 shadow-xl p-2 z-[999]"
+    >
+      {(['pt', 'en'] as const).map((lng) => (
+        <button
+          key={lng}
+          onClick={() => {
+            changeLanguage(lng)
+            setLangOpen(false)
+          }}
+          className={`block w-full text-left px-3 py-2 text-sm rounded-lg transition
+            ${
+              currentLang === lng
+                ? 'bg-gradient-to-r from-accent to-accent2 text-white font-semibold'
+                : 'text-gray-300 hover:bg-white/10'
+            }`}
+        >
+          {t(`navbar.toggle.${lng}`)}
+        </button>
+      ))}
+    </motion.div>
+  )}
+</div>
+
+
+              {/* Resume Button */}
+              <button
+                onClick={() => setShowCvModal(true)}
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r 
+                           from-accent to-accent2 px-4 py-2 text-sm font-semibold 
+                           text-white shadow-glow"
               >
-                {/* Pequena bolinha neon que aparece no hover */}
-                <span className="absolute left-1/2 top-full block h-1 w-1 -translate-x-1/2 rounded-full 
-                                  bg-accentLight opacity-0 group-hover:opacity-100 transition"></span>
-                {item.label}
-              </motion.a>
-            ))}
+                <Download size={16} />
+                {t('navbar.resume')}
+              </button>
+            </nav>
 
-            {/* BOTÃO CURRÍCULO */}
-            <motion.a
-              href={resumeUrl}
-              target="_blank"
-              rel="noreferrer"
-              whileHover={{ scale: 1.07 }}
-              className="ml-2 inline-flex items-center gap-2 rounded-full bg-gradient-to-r 
-                         from-accent to-accentLight px-4 py-2 text-sm font-semibold 
-                         text-white shadow-glow transition hover:brightness-110"
+            {/* MOBILE BUTTON */}
+            <button
+              className="md:hidden rounded-xl border border-white/20 bg-white/10 p-2 text-white shadow-inner"
+              onClick={() => setOpen(!open)}
             >
-              <Download size={16} />
-              Currículo
-            </motion.a>
-          </nav>
-
-          {/* MOBILE BUTTON */}
-          <button
-            className="md:hidden rounded-xl border border-white/20 bg-white/10 p-2 text-white shadow-inner"
-            onClick={() => setOpen(!open)}
-          >
-            {open ? <X size={20} /> : <Menu size={20} />}
-          </button>
+              {open ? <X size={20} /> : <Menu size={20} />}
+            </button>
+          </motion.div>
 
           {/* MOBILE MENU */}
           {open && (
             <motion.div
               {...fadeInUp()}
-              className="absolute left-0 right-0 top-full mt-3 rounded-2xl border border-white/10 
-                         bg-black/60 backdrop-blur-xl shadow-xl md:hidden overflow-hidden"
+              className="mt-3 rounded-2xl border border-white/10 bg-black/70 
+                         backdrop-blur-xl shadow-xl p-4 flex flex-col gap-2 md:hidden"
             >
-              <div className="flex flex-col px-4 py-4">
-                {links.map((item) => (
-                  <a
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setOpen(false)}
-                    className="rounded-xl px-3 py-3 text-sm font-medium text-gray-100 hover:bg-white/10 
-                               hover:text-white transition"
-                  >
-                    {item.label}
-                  </a>
-                ))}
+              {links.map((item) => (
                 <a
-                  href={resumeUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-3 flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r 
-                             from-accent to-accentLight px-3 py-3 text-sm font-semibold text-white shadow-glow"
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setOpen(false)}
+                  className="rounded-xl px-3 py-3 text-sm text-gray-100 hover:bg-white/10 transition"
                 >
-                  <Download size={16} />
-                  Currículo
+                  {item.label}
                 </a>
+              ))}
+
+              {/* mobile lang */}
+              <div className="flex items-center gap-2">
+                {(['pt', 'en'] as const).map((lng) => (
+                  <button
+                    key={lng}
+                    onClick={() => changeLanguage(lng)}
+                    className={`flex-1 rounded-xl px-3 py-3 text-sm font-semibold ${
+                      currentLang === lng
+                        ? 'bg-gradient-to-r from-accent to-accent2 text-white'
+                        : 'bg-white/5 text-gray-200'
+                    }`}
+                  >
+                    <Globe2 size={16} />
+                    {t(`navbar.toggle.${lng}`)}
+                  </button>
+                ))}
               </div>
+
+              <button
+                onClick={() => setShowCvModal(true)}
+                className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r 
+                           from-accent to-accent2 px-3 py-3 text-sm font-semibold text-white shadow-glow"
+              >
+                <Download size={16} />
+                {t('navbar.resume')}
+              </button>
             </motion.div>
           )}
-        </motion.div>
-      </div>
-    </header>
+        </div>
+      </header>
+
+      {/* MODAL — AGORA FORA DO HEADER (correção final do bug) */}
+      <CvDownloadModal show={showCvModal} onClose={() => setShowCvModal(false)} />
+    </>
   )
 }

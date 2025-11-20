@@ -1,0 +1,438 @@
+{
+  "common": {
+    "name": "Pedro Toscano",
+    "role": "Fullstack & Web3 Engineer",
+    "headline": "Indexo, enriqueço e entrego insights on-chain em milissegundos.",
+    "ctaProjects": "Ver projetos",
+    "ctaCv": "Baixar CV",
+    "ctaBackHome": "Voltar para início",
+    "ctaStatus": "Ver status do sistema",
+    "location": "Maringá, Paraná, Brasil"
+  },
+  "navbar": {
+    "resume": "Currículo",
+    "toggle": { "pt": "PT", "en": "EN" },
+    "explore": "Explorar",
+    "links": [
+      { "href": "#home", "label": "Início" },
+      { "href": "#projects", "label": "Projetos" },
+      { "href": "#case-studies", "label": "Cases" },
+      { "href": "#architecture", "label": "Arquitetura" },
+      { "href": "#stack", "label": "Stack" },
+      { "href": "#labs", "label": "Labs" },
+      { "href": "#about", "label": "Sobre" },
+      { "href": "#contact", "label": "Contato" }
+    ]
+  },
+  "social": {
+    "links": [
+      {
+        "type": "linkedin",
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/pedro-toscano-674454218/"
+      },
+      {
+        "type": "github",
+        "label": "GitHub",
+        "href": "https://github.com/pedro12u"
+      },
+      {
+        "type": "instagram",
+        "label": "Instagram",
+        "href": "https://www.instagram.com/pedrotoscanoo/"
+      },
+      {
+        "type": "email",
+        "label": "E-mail",
+        "href": "mailto:toscanopedroall@gmail.com"
+      },
+      { "type": "phone", "label": "Telefone", "href": "tel:+5545991030908" }
+    ]
+  },
+  "hero": {
+    "badge": "Fullstack & Web3 Engineer",
+    "headline": "Indexo, enriqueço e entrego insights on-chain em milissegundos.",
+    "description": "Especializado em Solana, pipelines inteligentes, sistemas distribuídos, automação, análise de dados, indexação e experiências front-end modernas. Construo ferramentas de análise on-chain, engines de enriquecimento, detectores de padrões, interseção de wallets, pipelines de tokens, automações Web3 e dashboards em tempo real.",
+    "chips": [
+      "Solana",
+      "Pipelines inteligentes",
+      "Dashboards em tempo real",
+      "Indexação e dados"
+    ],
+    "imageAlt": "Pedro Toscano"
+  },
+  "projectCard": {
+    "badge": "Projeto",
+    "action": "Ver mais",
+        "private": "Acesso privado"
+    
+  },
+  "projects": {
+    "label": "Projetos",
+    "title": "Seleção de projetos e protótipos",
+    "subtitle": "Experimentos, protótipos e entregas reais que mostram meu foco em produtos digitais, Web3 e experiências consistentes.",
+    "action": "Ver mais",
+    "items": [
+      {
+        "title": "Predict & Analytics Engine",
+        "private": true,
+        "description": "Engine que combina ingestão de dados em tempo real, normalização on-chain e painéis analíticos modernos. Integra múltiplas fontes externas para gerar insights automatizados.",
+        "technologies": ["TypeScript", "Node.js", "Web3"],
+        "badge": "Web3"
+      },
+      {
+        "title": "STBOT",
+        "private": true,
+        "description": "Bot de automação que envia alertas e relatórios em tempo real para comunidades Web3.",
+        "technologies": ["Node.js", "APIs", "Mensageria"],
+        "badge": "Automation"
+      },
+      {
+        "title": "Fee Distribution Engine",
+        "private": true,
+        "description": "Engine Web3 gamificada que reage ao crescimento de um token, acumula fees e distribui recompensas automaticamente para holders.",
+        "technologies": ["Solana", "Three.js", "TypeScript"],
+        "badge": "Web3"
+      },
+      {
+        "title": "Club Renderfast — SketchUp Plugin",
+        "private": true,
+        "description": "Plugin profissional que baixa, organiza e importa blocos 3D do acervo Club Renderfast direto no SketchUp.",
+        "technologies": ["Ruby", "SketchUp API", "UI Design"],
+        "badge": "Ferramenta"
+      },
+      {
+        "title": "Wallet Intersection Tool",
+        "private": true,
+        "description": "Ferramenta que cruza grandes listas de wallets e encontra interseções relevantes para campanhas e análises.",
+        "technologies": ["Node.js", "TypeScript", "MongoDB"],
+        "badge": "Data"
+      },
+      {
+        "title": "Token Analytics Pipeline",
+        "private": true,
+        "description": "Pipeline que consolida dados on-chain de tokens, creators, riscos e holders com heurísticas personalizadas.",
+        "technologies": ["MongoDB", "Aggregation", "TypeScript"],
+        "badge": "Data"
+      },
+      {
+        "title": "Pokedex — estudo de APIs públicas",
+        "private": false,
+        "description": "Catálogo de Pokémons com busca em tempo real e UI responsiva.",
+        "technologies": ["JavaScript", "PokeAPI", "Bootstrap"],
+        "badge": "Frontend",
+        "imageKey": "pokeapi"
+      },
+      {
+        "title": "OceanLive — conteúdo educativo",
+        "private": false,
+
+        "description": "Projeto estudantil com storytelling sobre conscientização oceânica.",
+        "technologies": ["HTML", "CSS", "UX Writing"],
+        "badge": "Projeto acadêmico",
+        "imageKey": "oceanlive"
+      },
+      {
+        "title": "TinDog — landing experimental",
+        "private": false,
+        "description": "Landing inspirada em apps de relacionamento, criada para treinar UI responsiva.",
+        "technologies": ["HTML", "CSS", "Bootstrap"],
+        "badge": "Landing",
+        "imageKey": "tindog"
+      }
+    ]
+  },
+  "caseCard": {
+    "pill": "Case Study",
+    "problem": "Problema",
+    "approach": "Abordagem",
+    "impact": "Impacto",
+    "metrics": "Métricas",
+    "action": "Ver detalhes"
+  },
+  "caseStudies": {
+    "label": "Case Studies",
+    "title": "Estudos completos com métricas reais",
+    "subtitle": "Problema, abordagem, impacto e stack de cada entrega. Cada case tem foco em performance, dados e experiência.",
+    "items": [
+      {
+        "title": "Predict & Analytics Engine",
+        "outcome": "Pipeline de dados com ingestão e normalização contínua",
+        "problem": "Era necessário unificar dados externos e dados on-chain em um fluxo consistente e rápido.",
+        "approach": "Desenvolvi ingestão contínua, normalização idempotente, enriquecimento e APIs para dashboards em tempo real.",
+        "impact": "Reduzi complexidade do fluxo, centralizei indicadores e habilitei análises rápidas.",
+        "metrics": [
+          { "label": "Latência média de ingestão", "value": "150–350ms" },
+          { "label": "Atualizações simultâneas", "value": "20+" },
+          { "label": "Stabilidade", "value": "Alta" }
+        ],
+        "stack": ["TypeScript", "Node.js", "Web3", "MongoDB", "React"]
+      },
+      {
+        "title": "Wallet Intersection Engine",
+        "outcome": "Interseção de grandes volumes de wallets em segundos",
+        "problem": "Era necessário cruzar milhares de wallets com filtros e progressão visível ao usuário.",
+        "approach": "Implementei fluxo assíncrono com filas internas, agregações MongoDB e paginação para 10k+ wallets.",
+        "impact": "Processos que levavam horas passaram a durar segundos, com rastreabilidade total.",
+        "metrics": [
+          { "label": "Tempo médio 10k wallets", "value": "2–6s" },
+          { "label": "Conjuntos suportados", "value": "10k–100k" },
+          { "label": "Precisão dos agrupamentos", "value": "Alta" }
+        ],
+        "stack": ["MongoDB", "Node.js", "TypeScript", "React"]
+      },
+      {
+        "title": "Token Analytics Pipeline",
+        "outcome": "Insights consolidados de tokens em minutos",
+        "problem": "Era preciso analisar tokens, creators e padrões suspeitos sem navegar em dados brutos.",
+        "approach": "Criei pipelines de enriquecimento, compressão de eventos e normalização padronizada.",
+        "impact": "Permitimos identificar creators suspeitos e tokens promissores com mais clareza.",
+        "metrics": [
+          { "label": "Refresh médio", "value": "2–5 min" },
+          { "label": "Tokens processados", "value": "milhares/dia" },
+          { "label": "Redução de redundância", "value": "40%+" }
+        ],
+        "stack": ["MongoDB", "Node.js", "TypeScript", "Redis"]
+      }
+    ]
+  },
+  "architecture": {
+    "label": "Arquitetura",
+    "title": "Diagramas, fluxos e métricas operacionais",
+    "subtitle": "Pipelines pensados para ingestão Web3, normalização idempotente, caching e entrega de dashboards em tempo real.",
+    "flowSubtitle": "Fluxo end-to-end com pontos de observabilidade.",
+    "items": [
+      {
+        "title": "Pipeline de Indexação & Enriquecimento Web3",
+        "steps": [
+          "RPC Provider",
+          "Ingestão Assíncrona (Workers)",
+          "Decoder de transações",
+          "Normalizer",
+          "Enriquecimento",
+          "Persistência (MongoDB)",
+          "APIs Web",
+          "Dashboards/Alerts"
+        ],
+        "metrics": [
+          "Fluxo idempotente",
+          "Paginação completa",
+          "Latência: 150–350ms"
+        ]
+      },
+      {
+        "title": "Engine de Alertas, Detecção & Automação",
+        "steps": [
+          "Detecção de eventos",
+          "Enriquecimento contextual",
+          "Classificação e prioridades",
+          "Fila (retry e backoff)",
+          "Entrega por Webhooks/APIs/Bots",
+          "Observabilidade"
+        ],
+        "metrics": ["Latência: 1–4s", "DLQ monitorada", "Alta resiliência"]
+      }
+    ]
+  },
+  "stack": {
+    "label": "Stack Técnica",
+    "maturityLabel": "Maturidade: ",
+    "title": "Camadas, bibliotecas e escolhas de arquitetura",
+    "subtitle": "Stack curada para indexação, dados, automação e experiências ricas em real-time.",
+    "items": [
+      {
+        "title": "Chain",
+        "maturity": "Stable",
+        "items": ["Solana RPC", "Web3.js"]
+      },
+      {
+        "title": "Backend",
+        "maturity": "Stable",
+        "items": ["Node.js / TypeScript", "Workers", "Filas internas"]
+      },
+      {
+        "title": "Data",
+        "maturity": "Beta",
+        "items": ["MongoDB Aggregation", "Redis"]
+      },
+      {
+        "title": "Front",
+        "maturity": "Stable",
+        "items": ["React", "Tailwind", "Framer Motion", "Vite"]
+      },
+      {
+        "title": "Observabilidade",
+        "maturity": "Beta",
+        "items": ["Logs", "Throughput", "DLQ"]
+      },
+      {
+        "title": "DX",
+        "maturity": "Stable",
+        "items": ["CI", "Feature toggles"]
+      }
+    ]
+  },
+  "workflow": {
+    "label": "Como eu trabalho",
+    "title": "Processo enxuto, mensurável e observável",
+    "subtitle": "Discovery → Arquitetura → Prototipagem → Build → Observabilidade → Handover.",
+    "footnote": "Entregáveis, risco e métricas pactuadas em cada fase.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "description": "Mapeio objetivos, restrições, SLAs e fontes de dados."
+      },
+      {
+        "title": "Arquitetura",
+        "description": "Desenho pipelines, trade-offs e critérios técnicos."
+      },
+      {
+        "title": "Prototipagem",
+        "description": "Valido ingestão, decodificação, aggregations e UX crítica."
+      },
+      {
+        "title": "Build",
+        "description": "Implemento pipelines, APIs e interfaces com versionamento claro."
+      },
+      {
+        "title": "Observabilidade",
+        "description": "Métricas, logs, alertas e KPIs operacionais."
+      },
+      {
+        "title": "Handover",
+        "description": "Documentação, SLOs, runbooks e roadmap."
+      }
+    ]
+  },
+  "labs": {
+    "label": "Labs",
+    "title": "Experimentos Web3 em diferentes estágios",
+    "subtitle": "Ideas, POCs e protótipos para novos motores Web3.",
+    "next": "Próximos passos: instrumentar métricas e liberar demo.",
+    "items": [
+      {
+        "title": "Predict Markets Simulator",
+        "status": "Alpha",
+        "description": "Simulador de mercados com cenários configuráveis."
+      },
+      {
+        "title": "Token Enrichment Engine",
+        "status": "Beta",
+        "description": "Expansão e heurísticas avançadas para creators e tokens."
+      },
+      {
+        "title": "Wallet Clustering Experimental",
+        "status": "Alpha",
+        "description": "Clusterização de wallets por padrões e comportamento."
+      },
+      {
+        "title": "Alert Feed v2",
+        "status": "Stable",
+        "description": "Feed assíncrono com dedupe, retry e enriquecimento."
+      }
+    ]
+  },
+  "dashboards": {
+    "label": "Dashboard",
+    "title": "Prints simulados e molduras glass",
+    "subtitle": "Frames de KPIs para representar a saúde dos sistemas.",
+    "items": [
+      {
+        "title": "Pipeline Monitor",
+        "kpis": ["Throughput 320/m", "Falhas 0.3%", "Reprocessados 42"],
+        "description": "Acompanhamento do fluxo de ingestão."
+      },
+      {
+        "title": "Token Insights",
+        "kpis": ["Tokens ativos 4.2k", "Creators 900+", "Risco 3.8%"],
+        "description": "Visão de saúde e padrões de tokens."
+      },
+      {
+        "title": "Wallet Intersection",
+        "kpis": ["18k cruzados", "12% interseção", "220 execuções/dia"],
+        "description": "KPIs da ferramenta de interseção."
+      },
+      {
+        "title": "Alert Engine",
+        "kpis": ["Entrega 98.7%", "Latência 2.1s", "12.4k eventos/dia"],
+        "description": "Performance do motor de alertas."
+      }
+    ]
+  },
+  "about": {
+    "label": "Sobre mim",
+    "title": "Tecnologia, propósito e projetos reais",
+    "subtitle": "Código, dados e Web3 como forma de construir impacto.",
+    "paragraphs": [
+      "Sou desenvolvedor apaixonado por projetos Web3, dados, automação e experiências digitais. Minha curiosidade começou cedo e hoje aplico isso construindo produtos completos do backend ao front.",
+      "Nos últimos anos criei sistemas de dados, dashboards, pipelines inteligentes, motores de enriquecimento e automações Web3. Cada projeto representa minha evolução em engenharia, design e arquitetura.",
+      "Minha motivação vem de ajudar pessoas, construir produtos reais e transformar complexidade em clareza."
+    ],
+    "facts": [
+      {
+        "title": "Educação",
+        "description": "Análise e Desenvolvimento de Sistemas (2023–2025). Engenharia de Software (2025–2027)."
+      },
+      {
+        "title": "Experiência",
+        "description": "Projetos Web3 reais com dados, automação, pipelines e dashboards."
+      },
+      {
+        "title": "Idiomas",
+        "description": "Português (nativo), Inglês (fluente), Espanhol (fluente)."
+      },
+      {
+        "title": "Habilidades",
+        "description": "TypeScript, Node.js, React, Web3, MongoDB, arquitetura distribuída e automação."
+      }
+    ],
+    "galleryAlt": [
+      "Pedro estudando tecnologia",
+      "Pedro apresentando projeto",
+      "Pedro em viagem"
+    ]
+  },
+  "contact": {
+    "label": "Contato",
+    "title": "Vamos construir algo extraordinário?",
+    "subtitle": "Aberto a oportunidades, freelas e colaborações. Se você quer tirar uma ideia do papel ou escalar um sistema, vamos conversar.",
+    "cardTitle": "Vamos conversar",
+    "cardDescription": "Me envie um email, chame no Whats ou conecte pelo LinkedIn. Costumo responder rápido.",
+    "cta": "Enviar mensagem",
+    "items": [
+      {
+        "label": "Email",
+        "value": "toscanopedroall@gmail.com",
+        "href": "mailto:toscanopedroall@gmail.com"
+      },
+      {
+        "label": "Telefone",
+        "value": "+55 45 99103-0908",
+        "href": "tel:+5545991030908"
+      },
+      { "label": "Local", "value": "Maringá, Paraná, Brasil" }
+    ]
+  },
+  "footer": {
+    "tagline": "Engenharia, dados e Web3 unidos para criar produtos eficientes e elegantes.",
+    "rights": "© {{year}} — Construído com tecnologia e propósito."
+  },
+  "error": {
+    "label": "Página de erro",
+    "title": "Algo saiu do curso",
+    "description": "Fallback customizado com glitch leve."
+  },
+  "modal": {
+    "cv": {
+      "badge": "Download",
+      "title": "Baixar Currículo",
+      "description": "Este currículo apresenta alto risco de contratação imediata. Continue por sua conta e risco.",
+      "pt": "PT — Currículo",
+      "en": "EN — Resume",
+      "cancel": "Cancelar (não clique!)",
+      "downloadStarted": "Download iniciado",
+      "downloadMessage": "Tomei a liberdade de começar o download. Agora é com você.",
+      "close": "Fechar modal"
+    }
+  }
+}

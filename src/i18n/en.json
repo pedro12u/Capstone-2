@@ -1,0 +1,317 @@
+{
+  "common": {
+    "name": "Pedro Toscano",
+    "role": "Fullstack & Web3 Engineer",
+    "headline": "I index, enrich, and deliver on-chain insights in milliseconds.",
+    "ctaProjects": "View projects",
+    "ctaCv": "Download CV",
+    "ctaBackHome": "Back to home",
+    "ctaStatus": "View system status",
+    "location": "Maringá, Paraná, Brazil"
+  },
+  "navbar": {
+    "resume": "Resume",
+    "toggle": { "pt": "PT", "en": "EN" },
+    "explore": "Explore",
+    "links": [
+      { "href": "#home", "label": "Home" },
+      { "href": "#projects", "label": "Projects" },
+      { "href": "#case-studies", "label": "Cases" },
+      { "href": "#architecture", "label": "Architecture" },
+      { "href": "#stack", "label": "Stack" },
+      { "href": "#labs", "label": "Labs" },
+      { "href": "#about", "label": "About" },
+      { "href": "#contact", "label": "Contact" }
+    ]
+  },
+  "social": {
+    "links": [
+      { "type": "linkedin", "label": "LinkedIn", "href": "https://www.linkedin.com/in/pedro-toscano-674454218/" },
+      { "type": "github", "label": "GitHub", "href": "https://github.com/pedro12u" },
+      { "type": "instagram", "label": "Instagram", "href": "https://www.instagram.com/pedrotoscanoo/" },
+      { "type": "email", "label": "Email", "href": "mailto:toscanopedroall@gmail.com" },
+      { "type": "phone", "label": "Phone", "href": "tel:+5545991030908" }
+    ]
+  },
+  "hero": {
+    "badge": "Fullstack & Web3 Engineer",
+    "headline": "I index, enrich, and deliver on-chain insights in milliseconds.",
+    "description": "Specialized in Solana, smart pipelines, distributed systems, automation, data analysis, indexing, and modern front-end experiences. I build on-chain analytics tools, enrichment engines, wallet intersection systems, token pipelines, Web3 automations, and real-time dashboards.",
+    "chips": ["Solana", "Smart pipelines", "Real-time dashboards", "Indexing & data"],
+    "imageAlt": "Pedro Toscano"
+  },
+  "projectCard": {
+    "badge": "Project",
+    "action": "View more",
+        "private": "Private access"
+  },
+  "projects": {
+    "label": "Projects",
+    "title": "Selection of projects and prototypes",
+    "subtitle": "Experiments, prototypes, and real systems showing my focus on digital products, Web3, automation, and data.",
+    "action": "View more",
+    "items": [
+      {
+        "title": "Predict & Analytics Engine",
+        "private": true,
+        "description": "Data engine combining real-time ingestion, on-chain decoding, normalization, and modern analytical dashboards.",
+        "technologies": ["TypeScript", "Node.js", "Web3"],
+        "badge": "Web3"
+      },
+      {
+        "title": "STBOT",
+                "private": true,
+        "description": "Automation bot that delivers real-time alerts and reports to Web3 communities.",
+        "technologies": ["Node.js", "APIs", "Messaging"],
+        "badge": "Automation"
+      },
+      {
+        "title": "Fee Distribution Engine",
+                "private": true,
+        "description": "Gamified Web3 engine reacting to token growth, accumulating fees, and distributing rewards automatically to holders.",
+        "technologies": ["Solana", "Three.js", "TypeScript"],
+        "badge": "Web3"
+      },
+      {
+        "title": "Club Renderfast — SketchUp Plugin",
+                "private": true,
+        "description": "Professional plugin that downloads, organizes, and imports 3D assets from the Club Renderfast library directly into SketchUp.",
+        "technologies": ["Ruby", "SketchUp API", "UI Design"],
+        "badge": "Tool"
+      },
+      {
+        "title": "Wallet Intersection Tool",
+                "private": true,
+        "description": "Tool that crosses large wallet lists and finds meaningful intersections for campaigns and analytics.",
+        "technologies": ["Node.js", "TypeScript", "MongoDB"],
+        "badge": "Data"
+      },
+      {
+        "title": "Token Analytics Pipeline",
+                "private": true,
+        "description": "Pipeline consolidating token, creator, and risk data with custom heuristics and enrichment.",
+        "technologies": ["MongoDB", "Aggregation", "TypeScript"],
+        "badge": "Data"
+      },
+      {
+        "title": "Pokedex — public API study",
+                "private": false,
+        "description": "Pokédex catalogue with real-time search and responsive UI.",
+        "technologies": ["JavaScript", "PokeAPI", "Bootstrap"],
+        "badge": "Frontend",
+        "imageKey": "pokeapi"
+      },
+      {
+        "title": "OceanLive — educational content",
+                        "private": false,
+        "description": "Student project focused on ocean awareness with storytelling and responsive UI.",
+        "technologies": ["HTML", "CSS", "UX Writing"],
+        "badge": "Academic",
+        "imageKey": "oceanlive"
+      },
+      {
+        "title": "TinDog — experimental landing",
+                        "private": false,
+        "description": "Landing inspired by dating apps, built to practice responsive UI.",
+        "technologies": ["HTML", "CSS", "Bootstrap"],
+        "badge": "Landing",
+        "imageKey": "tindog"
+      }
+    ]
+  },
+  "caseCard": {
+    "pill": "Case Study",
+    "problem": "Problem",
+    "approach": "Approach",
+    "impact": "Impact",
+    "metrics": "Metrics",
+    "action": "View details"
+  },
+  "caseStudies": {
+    "label": "Case Studies",
+    "title": "Complete studies with real metrics",
+    "subtitle": "Problem, approach, impact, and stack for each system. Each case focuses on performance, data, and reliability.",
+    "items": [
+      {
+        "title": "Predict & Analytics Engine",
+        "outcome": "Continuous data ingestion and normalization pipeline",
+        "problem": "Needed to unify external data and on-chain data into a consistent and fast flow.",
+        "approach": "Built asynchronous ingestion, idempotent normalization, enrichment layers, and APIs for real-time dashboards.",
+        "impact": "Reduced complexity, centralized indicators, and enabled fast analytics.",
+        "metrics": [
+          { "label": "Avg ingestion latency", "value": "150–350ms" },
+          { "label": "Simultaneous updates", "value": "20+" },
+          { "label": "Stability", "value": "High" }
+        ],
+        "stack": ["TypeScript", "Node.js", "Web3", "MongoDB", "React"]
+      },
+      {
+        "title": "Wallet Intersection Engine",
+        "outcome": "Intersection of large wallet sets in seconds",
+        "problem": "Campaign analysis required fast, traceable wallet intersections.",
+        "approach": "Implemented async job system, MongoDB aggregations, and pagination for 10k+ wallets.",
+        "impact": "Processes that took hours became seconds, with full transparency.",
+        "metrics": [
+          { "label": "10k wallets time", "value": "2–6s" },
+          { "label": "Supported sets", "value": "10k–100k" },
+          { "label": "Grouping accuracy", "value": "High" }
+        ],
+        "stack": ["MongoDB", "Node.js", "TypeScript", "React"]
+      },
+      {
+        "title": "Token Analytics Pipeline",
+        "outcome": "Consolidated token insights in minutes",
+        "problem": "Needed to analyze tokens and creators without browsing raw data.",
+        "approach": "Created enrichment, compression, and standardized normalization pipelines.",
+        "impact": "Enabled detection of suspicious creators and emerging tokens.",
+        "metrics": [
+          { "label": "Avg refresh", "value": "2–5 min" },
+          { "label": "Tokens processed", "value": "thousands/day" },
+          { "label": "Redundancy reduction", "value": "40%+" }
+        ],
+        "stack": ["MongoDB", "Node.js", "TypeScript", "Redis"]
+      }
+    ]
+  },
+  "architecture": {
+    "label": "Architecture",
+    "title": "Diagrams, flows, and operational metrics",
+    "subtitle": "Pipelines built for Web3 ingestion, idempotent normalization, caching, and real-time dashboards.",
+    "flowSubtitle": "End-to-end flow with observability points.",
+    "items": [
+      {
+        "title": "Web3 Indexing & Enrichment Pipeline",
+        "steps": [
+          "RPC Provider",
+          "Async Ingestion (Workers)",
+          "Transaction Decoder",
+          "Normalizer",
+          "Enrichment",
+          "Persistence (MongoDB)",
+          "Web APIs",
+          "Dashboards/Alerts"
+        ],
+        "metrics": ["Idempotent flow", "Full pagination", "Latency: 150–350ms"]
+      },
+      {
+        "title": "Alerting, Detection & Automation Engine",
+        "steps": [
+          "Event detection",
+          "Context enrichment",
+          "Prioritization",
+          "Queue (retry/backoff)",
+          "Webhook/API/Bot delivery",
+          "Observability"
+        ],
+        "metrics": ["Latency: 1–4s", "DLQ monitored", "High resilience"]
+      }
+    ]
+  },
+  "stack": {
+    "label": "Tech Stack",
+    "maturityLabel": "Maturity: ",
+    "title": "Layers, libraries, and architectural choices",
+    "subtitle": "Curated stack for indexing, data, automation, and rich real-time experiences.",
+    "items": [
+      { "title": "Chain", "maturity": "Stable", "items": ["Solana RPC", "Web3.js"] },
+      { "title": "Backend", "maturity": "Stable", "items": ["Node.js / TypeScript", "Workers", "Internal queues"] },
+      { "title": "Data", "maturity": "Beta", "items": ["MongoDB Aggregation", "Redis"] },
+      { "title": "Front", "maturity": "Stable", "items": ["React", "Tailwind", "Framer Motion", "Vite"] },
+      { "title": "Observability", "maturity": "Beta", "items": ["Logs", "Throughput", "DLQ"] },
+      { "title": "DX", "maturity": "Stable", "items": ["CI", "Feature toggles"] }
+    ]
+  },
+  "workflow": {
+    "label": "How I work",
+    "title": "Lean, measurable, and observable process",
+    "subtitle": "Discovery → Architecture → Prototyping → Build → Observability → Handover.",
+    "footnote": "Deliverables, risk, and metrics aligned at every stage.",
+    "steps": [
+      { "title": "Discovery", "description": "Map goals, constraints, SLAs, and data sources." },
+      { "title": "Architecture", "description": "Design pipelines, trade-offs, and technical criteria." },
+      { "title": "Prototyping", "description": "Validate ingestion, decoding, aggregations, and critical UX." },
+      { "title": "Build", "description": "Implement pipelines, APIs, and UI with clear versioning." },
+      { "title": "Observability", "description": "Metrics, logs, alerts, and operational KPIs." },
+      { "title": "Handover", "description": "Documentation, SLOs, runbooks, and roadmap." }
+    ]
+  },
+  "labs": {
+    "label": "Labs",
+    "title": "Web3 experiments at different stages",
+    "subtitle": "POCs and prototypes for new Web3 engines.",
+    "next": "Next steps: instrument metrics and release a demo.",
+    "items": [
+      { "title": "Predict Markets Simulator", "status": "Alpha", "description": "Market simulator with configurable scenarios." },
+      { "title": "Token Enrichment Engine", "status": "Beta", "description": "Advanced heuristics for token and creator expansion." },
+      { "title": "Wallet Clustering Experimental", "status": "Alpha", "description": "Behavior-based wallet clustering." },
+      { "title": "Alert Feed v2", "status": "Stable", "description": "Async feed with dedupe, retry, and enrichment." }
+    ]
+  },
+  "dashboards": {
+    "label": "Dashboard",
+    "title": "Simulated prints and glass frames",
+    "subtitle": "KPI frames representing system health.",
+    "items": [
+      { "title": "Pipeline Monitor", "kpis": ["Throughput 320/min", "Failures 0.3%", "Reprocessed 42"], "description": "Ingestion flow monitoring." },
+      { "title": "Token Insights", "kpis": ["Active tokens 4.2k", "Creators 900+", "Risk 3.8%"], "description": "Token health and pattern metrics." },
+      { "title": "Wallet Intersection", "kpis": ["18k crossed", "12% intersection", "220 runs/day"], "description": "Intersection tool KPIs." },
+      { "title": "Alert Engine", "kpis": ["Delivery 98.7%", "Latency 2.1s", "12.4k events/day"], "description": "Alert engine performance." }
+    ]
+  },
+  "about": {
+    "label": "About me",
+    "title": "Technology, purpose, and real projects",
+    "subtitle": "I combine curiosity and method to create elegant digital experiences with clean code and real-world impact.",
+    "paragraphs": [
+      "I’m a developer passionate about Web3, data, automation, and digital experiences. My curiosity started in early gaming and evolved into building full products from backend to front-end.",
+      "In the past few years, I built data systems, dashboards, smart pipelines, enrichment engines, and Web3 automations. Each project represents growth in engineering, architecture, and product thinking.",
+      "My motivation is helping people, building real products, and turning complexity into clarity."
+    ],
+    "facts": [
+      { "title": "Education", "description": "Systems Analysis & Development (2023–2025). Software Engineering (2025–2027)." },
+      { "title": "Experience", "description": "Real Web3 projects with data, automation, pipelines, and dashboards." },
+      { "title": "Languages", "description": "Portuguese (native), English (fluent), Spanish (fluent)." },
+      { "title": "Skills", "description": "TypeScript, Node.js, React, Web3, MongoDB, distributed architecture, automation." }
+    ],
+    "galleryAlt": [
+      "Pedro studying technology",
+      "Pedro presenting a project",
+      "Pedro traveling"
+    ]
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Let’s build something extraordinary",
+    "subtitle": "Open to opportunities, freelance work, collaborations, and Web3/tech projects. If you want to launch an idea or scale a system, let’s talk.",
+    "cardTitle": "Let’s talk",
+    "cardDescription": "Send me an email, WhatsApp, or connect via LinkedIn. I usually reply fast.",
+    "cta": "Send message",
+    "items": [
+      { "label": "Email", "value": "toscanopedroall@gmail.com", "href": "mailto:toscanopedroall@gmail.com" },
+      { "label": "Phone", "value": "+55 45 99103-0908", "href": "tel:+5545991030908" },
+      { "label": "Location", "value": "Maringá, Paraná, Brazil" }
+    ]
+  },
+  "footer": {
+    "tagline": "Engineering, data, and Web3 to build efficient and elegant products.",
+    "rights": "© {{year}} — Built with technology and purpose."
+  },
+  "error": {
+    "label": "Error page",
+    "title": "Something drifted off course",
+    "description": "Custom fallback with a light glitch."
+  },
+  "modal": {
+    "cv": {
+      "badge": "Download",
+      "title": "Download CV",
+      "description": "This résumé carries a high risk of immediate hiring. Proceed at your own risk.",
+      "pt": "PT — CV",
+      "en": "EN — Resume",
+      "cancel": "Cancel (don’t click!)",
+      "downloadStarted": "Download started",
+      "downloadMessage": "I went ahead and started the download for you.",
+      "close": "Close modal"
+    }
+  }
+}
