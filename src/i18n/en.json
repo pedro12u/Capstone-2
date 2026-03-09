@@ -1,8 +1,8 @@
 {
   "common": {
     "name": "Pedro Toscano",
-    "role": "Fullstack & Web3 Engineer",
-    "headline": "I index, enrich, and deliver on-chain insights in milliseconds.",
+    "role": "Backend & Full Stack Developer",
+    "headline": "I build robust backend systems, scalable APIs and automations that run in production.",
     "ctaProjects": "View projects",
     "ctaCv": "Download CV",
     "ctaBackHome": "Back to home",
@@ -18,7 +18,7 @@
       { "href": "#projects", "label": "Projects" },
       { "href": "#case-studies", "label": "Cases" },
       { "href": "#architecture", "label": "Architecture" },
-      { "href": "#stack", "label": "Stack" },
+      { "href": "#stack", "label": "Technical Stack" },
       { "href": "#labs", "label": "Labs" },
       { "href": "#about", "label": "About" },
       { "href": "#contact", "label": "Contact" }
@@ -34,10 +34,10 @@
     ]
   },
   "hero": {
-    "badge": "Fullstack & Web3 Engineer",
-    "headline": "I index, enrich, and deliver on-chain insights in milliseconds.",
-    "description": "Specialized in Solana, smart pipelines, distributed systems, automation, data analysis, indexing, and modern front-end experiences. I build on-chain analytics tools, enrichment engines, wallet intersection systems, token pipelines, Web3 automations, and real-time dashboards.",
-    "chips": ["Solana", "Smart pipelines", "Real-time dashboards", "Indexing & data"],
+    "badge": "Backend & Full Stack Developer",
+    "headline": "I build robust backend systems, scalable APIs and automations that run in production.",
+    "description": "I focus on reliable backend development, integrations, and full stack products with performance, observability, and maintainability in mind. Web3 is a strategic differentiator when it adds real business value.",
+    "chips": ["Node.js", "TypeScript", "REST APIs", "Automation", "Web3"],
     "imageAlt": "Pedro Toscano"
   },
   "projectCard": {
@@ -48,9 +48,23 @@
   "projects": {
     "label": "Projects",
     "title": "Selection of projects and prototypes",
-    "subtitle": "Experiments, prototypes, and real systems showing my focus on digital products, Web3, automation, and data.",
+    "subtitle": "Systems and products that reflect my focus on backend, full stack, automation, with Web3 as a differentiator.",
     "action": "View more",
     "items": [
+      {
+        "title": "Corporate RPA + Node.js API Automation",
+        "private": true,
+        "description": "Corporate web automation system with dynamic DOM. Node.js API with concurrency control, managed timeout and deterministic error handling. Runs 24/7 in production with PM2.",
+        "technologies": ["Node.js", "TypeScript", "UiPath", "PM2"],
+        "badge": "Automation"
+      },
+      {
+        "title": "TixUp — Event Ticketing Platform",
+        "private": false,
+        "description": "Full event management platform with online ticket sales, analytics dashboard, personalized marketing and QR Code check-ins. 800+ hours of team development.",
+        "technologies": ["React", "Node.js", "PostgreSQL", "Prisma"],
+        "badge": "Platform"
+      },
       {
         "title": "Predict & Analytics Engine",
         "private": true,
@@ -208,17 +222,34 @@
     ]
   },
   "stack": {
-    "label": "Tech Stack",
-    "maturityLabel": "Maturity: ",
-    "title": "Layers, libraries, and architectural choices",
-    "subtitle": "Curated stack for indexing, data, automation, and rich real-time experiences.",
+    "label": "Technical Stack",
+    "title": "Technical Stack",
+    "subtitle": "Technologies organized by domain.",
     "items": [
-      { "title": "Chain", "maturity": "Stable", "items": ["Solana RPC", "Web3.js"] },
-      { "title": "Backend", "maturity": "Stable", "items": ["Node.js / TypeScript", "Workers", "Internal queues"] },
-      { "title": "Data", "maturity": "Beta", "items": ["MongoDB Aggregation", "Redis"] },
-      { "title": "Front", "maturity": "Stable", "items": ["React", "Tailwind", "Framer Motion", "Vite"] },
-      { "title": "Observability", "maturity": "Beta", "items": ["Logs", "Throughput", "DLQ"] },
-      { "title": "DX", "maturity": "Stable", "items": ["CI", "Feature toggles"] }
+      {
+        "title": "Backend",
+        "items": ["Node.js", "NestJS", "Express.js", "TypeScript", "Java", "PHP", "REST APIs", "WebSockets"]
+      },
+      {
+        "title": "Frontend",
+        "items": ["React", "Next.js", "JavaScript", "Tailwind CSS"]
+      },
+      {
+        "title": "Database",
+        "items": ["PostgreSQL", "MySQL", "MongoDB", "Prisma", "Mongoose"]
+      },
+      {
+        "title": "DevOps/Infra",
+        "items": ["Docker", "CI/CD", "GitHub Actions", "Railway", "Vercel", "VPS/Linux"]
+      },
+      {
+        "title": "Web3",
+        "items": ["Solana", "Web3.js", "Solidity/EVM", "Smart Contracts"]
+      },
+      {
+        "title": "Automation",
+        "items": ["UiPath", "Playwright", "n8n", "RPA"]
+      }
     ]
   },
   "workflow": {
@@ -263,7 +294,7 @@
     "title": "Technology, purpose, and real projects",
     "subtitle": "I combine curiosity and method to create elegant digital experiences with clean code and real-world impact.",
     "paragraphs": [
-      "I’m a developer passionate about Web3, data, automation, and digital experiences. My curiosity started in early gaming and evolved into building full products from backend to front-end.",
+      "I'm a backend and full stack developer with 4+ years building production systems. Strong focus on Node.js, TypeScript, REST APIs and automation. I also work with Web3, having built on-chain pipelines, wallet analysis tools and Solana integrations. Each project represents my growth in engineering, architecture and delivering real value.",
       "In the past few years, I built data systems, dashboards, smart pipelines, enrichment engines, and Web3 automations. Each project represents growth in engineering, architecture, and product thinking.",
       "My motivation is helping people, building real products, and turning complexity into clarity."
     ],

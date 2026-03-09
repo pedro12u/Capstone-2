@@ -1,8 +1,8 @@
 {
   "common": {
     "name": "Pedro Toscano",
-    "role": "Fullstack & Web3 Engineer",
-    "headline": "Indexo, enriqueço e entrego insights on-chain em milissegundos.",
+    "role": "Backend & Full Stack Developer",
+    "headline": "Construo sistemas backend robustos, APIs escaláveis e automações que rodam em produção.",
     "ctaProjects": "Ver projetos",
     "ctaCv": "Baixar CV",
     "ctaBackHome": "Voltar para início",
@@ -18,7 +18,7 @@
       { "href": "#projects", "label": "Projetos" },
       { "href": "#case-studies", "label": "Cases" },
       { "href": "#architecture", "label": "Arquitetura" },
-      { "href": "#stack", "label": "Stack" },
+      { "href": "#stack", "label": "Stack Técnica" },
       { "href": "#labs", "label": "Labs" },
       { "href": "#about", "label": "Sobre" },
       { "href": "#contact", "label": "Contato" }
@@ -50,14 +50,15 @@
     ]
   },
   "hero": {
-    "badge": "Fullstack & Web3 Engineer",
-    "headline": "Indexo, enriqueço e entrego insights on-chain em milissegundos.",
-    "description": "Especializado em Solana, pipelines inteligentes, sistemas distribuídos, automação, análise de dados, indexação e experiências front-end modernas. Construo ferramentas de análise on-chain, engines de enriquecimento, detectores de padrões, interseção de wallets, pipelines de tokens, automações Web3 e dashboards em tempo real.",
+    "badge": "Backend & Full Stack Developer",
+    "headline": "Construo sistemas backend robustos, APIs escaláveis e automações que rodam em produção.",
+    "description": "Atuo no desenvolvimento de backends confiáveis, integrações e produtos full stack com foco em performance, observabilidade e manutenção. Web3 entra como diferencial quando gera valor real.",
     "chips": [
-      "Solana",
-      "Pipelines inteligentes",
-      "Dashboards em tempo real",
-      "Indexação e dados"
+      "Node.js",
+      "TypeScript",
+      "APIs REST",
+      "Automação",
+      "Web3"
     ],
     "imageAlt": "Pedro Toscano"
   },
@@ -70,9 +71,23 @@
   "projects": {
     "label": "Projetos",
     "title": "Seleção de projetos e protótipos",
-    "subtitle": "Experimentos, protótipos e entregas reais que mostram meu foco em produtos digitais, Web3 e experiências consistentes.",
+    "subtitle": "Sistemas e produtos que refletem meu foco em backend, full stack, automação e Web3 como diferencial.",
     "action": "Ver mais",
     "items": [
+      {
+        "title": "Automação Corporativa RPA + API Node.js",
+        "private": true,
+        "description": "Sistema de automação web corporativo com DOM dinâmico. API Node.js com controle de concorrência, timeout gerenciado e tratamento determinístico de erros. Roda 24/7 em produção com PM2.",
+        "technologies": ["Node.js", "TypeScript", "UiPath", "PM2"],
+        "badge": "Automation"
+      },
+      {
+        "title": "TixUp — Plataforma de Venda de Ingressos",
+        "private": false,
+        "description": "Plataforma completa de gestão de eventos com venda online, dashboard analytics, marketing personalizado e check-ins por QR Code. +800 horas de desenvolvimento em equipe.",
+        "technologies": ["React", "Node.js", "PostgreSQL", "Prisma"],
+        "badge": "Platform"
+      },
       {
         "title": "Predict & Analytics Engine",
         "private": true,
@@ -236,39 +251,32 @@
   },
   "stack": {
     "label": "Stack Técnica",
-    "maturityLabel": "Maturidade: ",
-    "title": "Camadas, bibliotecas e escolhas de arquitetura",
-    "subtitle": "Stack curada para indexação, dados, automação e experiências ricas em real-time.",
+    "title": "Stack Técnica",
+    "subtitle": "Tecnologias organizadas por área de atuação.",
     "items": [
       {
-        "title": "Chain",
-        "maturity": "Stable",
-        "items": ["Solana RPC", "Web3.js"]
-      },
-      {
         "title": "Backend",
-        "maturity": "Stable",
-        "items": ["Node.js / TypeScript", "Workers", "Filas internas"]
+        "items": ["Node.js", "NestJS", "Express.js", "TypeScript", "Java", "PHP", "REST APIs", "WebSockets"]
       },
       {
-        "title": "Data",
-        "maturity": "Beta",
-        "items": ["MongoDB Aggregation", "Redis"]
+        "title": "Frontend",
+        "items": ["React", "Next.js", "JavaScript", "Tailwind CSS"]
       },
       {
-        "title": "Front",
-        "maturity": "Stable",
-        "items": ["React", "Tailwind", "Framer Motion", "Vite"]
+        "title": "Banco de Dados",
+        "items": ["PostgreSQL", "MySQL", "MongoDB", "Prisma", "Mongoose"]
       },
       {
-        "title": "Observabilidade",
-        "maturity": "Beta",
-        "items": ["Logs", "Throughput", "DLQ"]
+        "title": "DevOps/Infra",
+        "items": ["Docker", "CI/CD", "GitHub Actions", "Railway", "Vercel", "VPS/Linux"]
       },
       {
-        "title": "DX",
-        "maturity": "Stable",
-        "items": ["CI", "Feature toggles"]
+        "title": "Web3",
+        "items": ["Solana", "Web3.js", "Solidity/EVM", "Smart Contracts"]
+      },
+      {
+        "title": "Automação",
+        "items": ["UiPath", "Playwright", "n8n", "RPA"]
       }
     ]
   },
@@ -364,7 +372,7 @@
     "title": "Tecnologia, propósito e projetos reais",
     "subtitle": "Código, dados e Web3 como forma de construir impacto.",
     "paragraphs": [
-      "Sou desenvolvedor apaixonado por projetos Web3, dados, automação e experiências digitais. Minha curiosidade começou cedo e hoje aplico isso construindo produtos completos do backend ao front.",
+      "Sou desenvolvedor backend e full stack com mais de 4 anos construindo sistemas em produção. Tenho forte atuação com Node.js, TypeScript, APIs REST e automação. Também atuo com Web3, tendo construído pipelines on-chain, ferramentas de análise de wallets e integrações com Solana. Cada projeto representa minha evolução em engenharia, arquitetura e entrega de valor real.",
       "Nos últimos anos criei sistemas de dados, dashboards, pipelines inteligentes, motores de enriquecimento e automações Web3. Cada projeto representa minha evolução em engenharia, design e arquitetura.",
       "Minha motivação vem de ajudar pessoas, construir produtos reais e transformar complexidade em clareza."
     ],

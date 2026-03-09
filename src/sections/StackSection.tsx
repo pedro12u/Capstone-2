@@ -7,7 +7,7 @@ export function StackSection() {
   const { t } = useTranslation()
   const layers = t('stack.items', { returnObjects: true }) as Array<{
     title: string
-    maturity: string
+    maturity?: string
     items: string[]
   }>
 
@@ -30,10 +30,12 @@ export function StackSection() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="pill w-fit">{layer.title}</p>
-                  <p className="text-gray-300">
-                    {t('stack.maturityLabel', { defaultValue: 'Maturity: ' })}
-                    {layer.maturity}
-                  </p>
+                  {layer.maturity ? (
+                    <p className="text-gray-300">
+                      {t('stack.maturityLabel', { defaultValue: 'Maturity: ' })}
+                      {layer.maturity}
+                    </p>
+                  ) : null}
                 </div>
                 <div className="h-10 w-10 rounded-2xl bg-white/10 shadow-glow" />
               </div>
